@@ -1,0 +1,40 @@
+{
+    "name": "Real Url",
+    "version": "1.0.0",
+    "description": "获取直播源",
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "storage",
+        "<all_urls>"
+    ],
+    "content_scripts": [{
+        "matches": ["https://live.bilibili.com/*"],
+        "js": ["js/floatwindow.js"],
+        "css": ["css/floatwindow.css"]
+    }],
+    "homepage_url": "https://github.com/wbt5/real-url",
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+    "web_accessible_resources": [
+        "img/*.svg"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "img/realurl_16.png",
+            "32": "img/realurl_32.png",
+            "48": "img/realurl_48.png",
+            "128": "img/realurl_128.png"
+        }
+    },
+    "icons": {
+        "16": "img/realurl_16.png",
+        "32": "img/realurl_32.png",
+        "48": "img/realurl_48.png",
+        "128": "img/realurl_128.png"
+    },
+    "manifest_version": 2
+}

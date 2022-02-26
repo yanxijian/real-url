@@ -1,0 +1,151 @@
+/* 菜单 */
+
+.ru-text-span {
+    font-size: 11px;
+    line-height: 32px;
+    text-align: right;
+    color: #FFFFFFBB;
+    font-family: "Microsoft Yahei";
+    overflow: hidden;
+}
+
+.ru-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 80px;
+    left: 8px;
+    background: transparent;
+}
+
+
+/* 悬浮条-复制直播源 */
+
+.ru-nav-item-copyurl {
+    display: block;
+    font-size: 12px;
+    margin: 18px;
+}
+
+.ru-nav-item-copyurl:hover .a {
+    visibility: visible;
+}
+
+.ru-nav-item-copyurl>a {
+    width: 32px;
+    height: 32px;
+    margin: 3px 0px 3px auto;
+    background: #4187F0CC;
+    cursor: pointer;
+    display: flex;
+    border-radius: 32px;
+    border: 2px solid #FFFFFF99;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ru-nav-item-copyurl>a:hover {
+    width: 104px;
+    padding: 0px auto;
+    background: #7CABF2CC;
+    transition-duration: 0.3s;
+}
+
+.ru-nav-item-copyurl>a:active {
+    width: 104px;
+    padding: 0px auto;
+    background: #3999BFCC;
+}
+
+.ru-nav-item-copyurl>a .ru-text-span {
+    visibility: hidden;
+    width: 0px;
+    margin-left: 0px;
+}
+
+.ru-nav-item-copyurl>a:hover .ru-text-span {
+    visibility: visible;
+    width: fit-content;
+    margin-left: 5px;
+}
+
+.ru-nav-item-copyurl>a:active .ru-text-span {
+    visibility: visible;
+    width: fit-content;
+    margin-left: 5px;
+}
+
+.ru-nav-item-copyurl>a>.glyphicon {
+    width: 16px;
+    width: 16px;
+}
+
+
+/* 悬浮条-隐藏 */
+
+.ru-nav-item-hide {
+    display: block;
+    font-size: 12px;
+    margin: 18px;
+    visibility: hidden;
+}
+
+.ru-nav-item-hide:hover .a {
+    visibility: visible;
+}
+
+.ru-nav-item-hide>a {
+    width: 32px;
+    height: 32px;
+    margin: 3px 0px 3px auto;
+    background: #5E5E5ECC;
+    cursor: pointer;
+    display: flex;
+    border-radius: 32px;
+    border: 2px solid #FFFFFF99;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ru-nav-item-hide>a:hover {
+    width: 104px;
+    padding: 0px auto;
+    background: #838383CC;
+    transition-duration: 0.3s;
+}
+
+.ru-nav-item-hide>a:active {
+    width: 104px;
+    padding: 0px auto;
+    background: #484848CC;
+}
+
+.ru-nav-item-hide>a .ru-text-span {
+    visibility: hidden;
+    width: 0px;
+    margin-left: 0px;
+}
+
+.ru-nav-item-hide>a:hover .ru-text-span {
+    visibility: visible;
+    width: fit-content;
+    margin-left: 5px;
+}
+
+.ru-nav-item-hide>a:active .ru-text-span {
+    visibility: visible;
+    width: fit-content;
+    margin-left: 5px;
+}
+
+.ru-nav-item-hide>a>.glyphicon {
+    width: 16px;
+    width: 16px;
+}
